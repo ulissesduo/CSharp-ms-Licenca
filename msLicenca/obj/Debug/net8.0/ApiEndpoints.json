@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[msLicenca.Entity.Licenca, msLicenca, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[msLicenca.Dto.LicencaResponseDTO, msLicenca, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -28,14 +28,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "licenca",
-        "Type": "msLicenca.Entity.Licenca",
+        "Name": "dto",
+        "Type": "msLicenca.Dto.LicencaRequestDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "msLicenca.Entity.Licenca",
+        "Type": "msLicenca.Dto.LicencaResponseDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -61,7 +61,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "msLicenca.Entity.Licenca",
+        "Type": "msLicenca.Dto.LicencaResponseDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -85,14 +85,14 @@
         "IsRequired": true
       },
       {
-        "Name": "licenca",
-        "Type": "msLicenca.Entity.Licenca",
+        "Name": "dto",
+        "Type": "msLicenca.Dto.LicencaRequestDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "msLicenca.Entity.Licenca",
+        "Type": "msLicenca.Dto.LicencaResponseDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",

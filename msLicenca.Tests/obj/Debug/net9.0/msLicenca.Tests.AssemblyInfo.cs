@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("msLicenca.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+674987b8ca1d2179a5b5bb2b9da9059b4abd7ba4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b41b55982e2ee12f0b51d0f1b3f7a93c33eb6339")]
 [assembly: System.Reflection.AssemblyProductAttribute("msLicenca.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("msLicenca.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

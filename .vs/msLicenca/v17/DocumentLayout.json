@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|c:\\users\\ulisses\\source\\repos\\mslicenca\\mslicenca\\migrations\\20250605002008_createlicence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|solutionrelative:mslicenca\\migrations\\20250605002008_createlicence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|c:\\users\\ulisses\\source\\repos\\mslicenca\\mslicenca\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|solutionrelative:mslicenca\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -19,16 +15,32 @@
       "RelativeMoniker": "D:0:0:{54534C28-45E8-47AB-AAF9-11AD15FCA1DA}|msLicenca.Tests\\msLicenca.Tests.csproj|solutionrelative:mslicenca.tests\\controller\\licencacontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|c:\\users\\ulisses\\source\\repos\\mslicenca\\mslicenca\\dto\\licencarequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|solutionrelative:mslicenca\\dto\\licencarequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|c:\\users\\ulisses\\source\\repos\\mslicenca\\mslicenca\\mapper\\licencaprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|solutionrelative:mslicenca\\mapper\\licencaprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|c:\\users\\ulisses\\source\\repos\\mslicenca\\mslicenca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|solutionrelative:mslicenca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|c:\\users\\ulisses\\source\\repos\\mslicenca\\mslicenca\\controllers\\licencacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|solutionrelative:mslicenca\\controllers\\licencacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54534C28-45E8-47AB-AAF9-11AD15FCA1DA}|msLicenca.Tests\\msLicenca.Tests.csproj|c:\\users\\ulisses\\source\\repos\\mslicenca\\mslicenca.tests\\service\\licenceservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54534C28-45E8-47AB-AAF9-11AD15FCA1DA}|msLicenca.Tests\\msLicenca.Tests.csproj|solutionrelative:mslicenca.tests\\service\\licenceservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|c:\\users\\ulisses\\source\\repos\\mslicenca\\mslicenca\\dto\\licencaresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|solutionrelative:mslicenca\\dto\\licencaresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|c:\\users\\ulisses\\source\\repos\\mslicenca\\mslicenca\\service\\licencaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|solutionrelative:mslicenca\\service\\licencaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|c:\\users\\ulisses\\source\\repos\\mslicenca\\mslicenca\\entity\\licenca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|solutionrelative:mslicenca\\entity\\licenca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37F8EF43-10F3-43FE-A5D4-CEF25AEA3474}|msLicenca\\msLicenca.csproj|c:\\users\\ulisses\\source\\repos\\mslicenca\\mslicenca\\repository\\licencarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,37 +54,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20250605002008_CreateLicence.cs",
-              "DocumentMoniker": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Migrations\\20250605002008_CreateLicence.cs",
-              "RelativeDocumentMoniker": "msLicenca\\Migrations\\20250605002008_CreateLicence.cs",
-              "ToolTip": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Migrations\\20250605002008_CreateLicence.cs",
-              "RelativeToolTip": "msLicenca\\Migrations\\20250605002008_CreateLicence.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "LicencaController.cs",
+              "DocumentMoniker": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Controllers\\LicencaController.cs",
+              "RelativeDocumentMoniker": "msLicenca\\Controllers\\LicencaController.cs",
+              "ToolTip": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Controllers\\LicencaController.cs",
+              "RelativeToolTip": "msLicenca\\Controllers\\LicencaController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAcwE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T22:49:41.509Z",
+              "WhenOpened": "2025-06-12T23:03:44.336Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\appsettings.json",
-              "RelativeDocumentMoniker": "msLicenca\\appsettings.json",
-              "ToolTip": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\appsettings.json",
-              "RelativeToolTip": "msLicenca\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-10T22:49:26.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\appsettings.Development.json",
               "RelativeDocumentMoniker": "msLicenca\\appsettings.Development.json",
@@ -80,69 +79,125 @@
               "RelativeToolTip": "msLicenca\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-10T22:49:24.235Z",
+              "WhenOpened": "2025-06-12T23:13:36.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Program.cs",
+              "RelativeDocumentMoniker": "msLicenca\\Program.cs",
+              "ToolTip": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Program.cs",
+              "RelativeToolTip": "msLicenca\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T23:16:28.473Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "LicencaController.cs",
-              "DocumentMoniker": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Controllers\\LicencaController.cs",
-              "RelativeDocumentMoniker": "msLicenca\\Controllers\\LicencaController.cs",
-              "ToolTip": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Controllers\\LicencaController.cs",
-              "RelativeToolTip": "msLicenca\\Controllers\\LicencaController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAgwCcAAAAiAAAAAAAAAA==",
+              "Title": "LicencaProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Mapper\\LicencaProfile.cs",
+              "RelativeDocumentMoniker": "msLicenca\\Mapper\\LicencaProfile.cs",
+              "ToolTip": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Mapper\\LicencaProfile.cs",
+              "RelativeToolTip": "msLicenca\\Mapper\\LicencaProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T01:24:31.47Z"
+              "WhenOpened": "2025-06-12T23:25:21.863Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "LicencaRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Dto\\LicencaRequestDTO.cs",
+              "RelativeDocumentMoniker": "msLicenca\\Dto\\LicencaRequestDTO.cs",
+              "ToolTip": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Dto\\LicencaRequestDTO.cs",
+              "RelativeToolTip": "msLicenca\\Dto\\LicencaRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T23:24:15.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "LicencaControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca.Tests\\Controller\\LicencaControllerTests.cs",
               "RelativeDocumentMoniker": "msLicenca.Tests\\Controller\\LicencaControllerTests.cs",
               "ToolTip": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca.Tests\\Controller\\LicencaControllerTests.cs",
               "RelativeToolTip": "msLicenca.Tests\\Controller\\LicencaControllerTests.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCYAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowA0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T00:36:16.055Z",
+              "WhenOpened": "2025-06-12T23:18:55.471Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\appsettings.json",
+              "RelativeDocumentMoniker": "msLicenca\\appsettings.json",
+              "ToolTip": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\appsettings.json",
+              "RelativeToolTip": "msLicenca\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-12T23:13:38.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LicencaResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Dto\\LicencaResponseDTO.cs",
+              "RelativeDocumentMoniker": "msLicenca\\Dto\\LicencaResponseDTO.cs",
+              "ToolTip": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Dto\\LicencaResponseDTO.cs",
+              "RelativeToolTip": "msLicenca\\Dto\\LicencaResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T22:58:21.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "LicencaService.cs",
               "DocumentMoniker": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Service\\LicencaService.cs",
               "RelativeDocumentMoniker": "msLicenca\\Service\\LicencaService.cs",
               "ToolTip": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Service\\LicencaService.cs",
               "RelativeToolTip": "msLicenca\\Service\\LicencaService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAIwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T19:06:09.45Z"
+              "WhenOpened": "2025-06-12T23:07:13.332Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "LicencaRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Repository\\LicencaRepository.cs",
               "RelativeDocumentMoniker": "msLicenca\\Repository\\LicencaRepository.cs",
               "ToolTip": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Repository\\LicencaRepository.cs",
               "RelativeToolTip": "msLicenca\\Repository\\LicencaRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAYwFkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T18:45:16.037Z"
+              "WhenOpened": "2025-06-12T22:58:13.71Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LicenceServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca.Tests\\Service\\LicenceServiceTests.cs",
-              "RelativeDocumentMoniker": "msLicenca.Tests\\Service\\LicenceServiceTests.cs",
-              "ToolTip": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca.Tests\\Service\\LicenceServiceTests.cs",
-              "RelativeToolTip": "msLicenca.Tests\\Service\\LicenceServiceTests.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAYwD8AAACdAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "Licenca.cs",
+              "DocumentMoniker": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Entity\\Licenca.cs",
+              "RelativeDocumentMoniker": "msLicenca\\Entity\\Licenca.cs",
+              "ToolTip": "C:\\Users\\Ulisses\\source\\repos\\msLicenca\\msLicenca\\Entity\\Licenca.cs",
+              "RelativeToolTip": "msLicenca\\Entity\\Licenca.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T18:36:03.865Z"
+              "WhenOpened": "2025-06-12T22:56:23.121Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using msLicenca.Controllers;
+using msLicenca.Dto;
 using msLicenca.Entity;
 using msLicenca.Service;
 using System;
@@ -15,89 +17,189 @@ namespace msLicenca.Tests.Controller
 {
     public class LicencaControllerTests
     {
+        public readonly Mock<IMapper> _mockMapper;
         public readonly Mock<ILicencaService> _mockService;
         public readonly LicencaController _controller;
         public LicencaControllerTests()
         {
             _mockService = new Mock<ILicencaService>();
-            _controller = new LicencaController(_mockService.Object);
+            _mockMapper = new Mock<IMapper> ();
+            _controller = new LicencaController(_mockService.Object, _mockMapper.Object );
         }
 
         [Fact]
-        public async Task GetAll_ReturnsAllLicences_WithListOfLicences() 
+        public async Task GetAll_ReturnsAllLicences_WithListOfLicencaResponseDTO()
         {
-            var licence = new List<Licenca>
+            var licences = new List<Licenca>
             {
-                new Licenca{Id = 1, IdEpresa = 1, IdTipoLicenca = 1, Data_emissao = DateOnly.FromDateTime(DateTime.Now), Data_validade = DateOnly.FromDateTime(DateTime.Now), Status = StatusLicenca.ATIVA },
-                new Licenca{Id = 1, IdEpresa = 1, IdTipoLicenca = 1, Data_emissao = DateOnly.FromDateTime(DateTime.Now), Data_validade = DateOnly.FromDateTime(DateTime.Now), Status = StatusLicenca.ATIVA }
-
+                new Licenca { Id = 1, IdEpresa = 1, IdTipoLicenca = 1, Data_emissao = DateOnly.FromDateTime(DateTime.Now), Data_validade = DateOnly.FromDateTime(DateTime.Now), Status = StatusLicenca.ATIVA },
+                new Licenca { Id = 2, IdEpresa = 1, IdTipoLicenca = 1, Data_emissao = DateOnly.FromDateTime(DateTime.Now), Data_validade = DateOnly.FromDateTime(DateTime.Now), Status = StatusLicenca.ATIVA }
             };
 
-            _mockService.Setup(s => s.GetAllLicencasAsync()).ReturnsAsync(licence);
+            var licencaDtos = new List<LicencaResponseDTO>
+            {
+                new LicencaResponseDTO { Id = 1, IdEpresa = 1, IdTipoLicenca = 1, Data_emissao = DateOnly.FromDateTime(DateTime.Now), Data_validade = DateOnly.FromDateTime(DateTime.Now), Status = StatusLicenca.ATIVA },
+                new LicencaResponseDTO { Id = 2, IdEpresa = 1, IdTipoLicenca = 1, Data_emissao = DateOnly.FromDateTime(DateTime.Now), Data_validade = DateOnly.FromDateTime(DateTime.Now), Status = StatusLicenca.ATIVA }
+            };
+
+            _mockService.Setup(s => s.GetAllLicencasAsync()).ReturnsAsync(licences);
+            _mockMapper.Setup(m => m.Map<List<LicencaResponseDTO>>(licences)).Returns(licencaDtos);
+
             var result = await _controller.GetAll();
+
             var okResult = Assert.IsType<OkObjectResult>(result.Result);
-            var returnValue = Assert.IsType<List<Licenca>>(okResult.Value);
+            var returnValue = Assert.IsType<List<LicencaResponseDTO>>(okResult.Value);
             Assert.Equal(2, returnValue.Count);
         }
+
         [Fact]
-        public async Task GetById_ReturnsLicenceById_WithValidId() 
+        public async Task GetById_ReturnsLicenceById_WithValidId()
         {
-            var licence = new Licenca { Id = 1, IdEpresa = 1, IdTipoLicenca = 1, Status = StatusLicenca.ATIVA, Data_emissao = DateOnly.FromDateTime(DateTime.Now), Data_validade = DateOnly.FromDateTime(DateTime.Now) };
-            _mockService.Setup(s => s.GetLicencaByIdAsync(1)).ReturnsAsync(licence) ;
+            var licence = new Licenca
+            {
+                Id = 1,
+                IdEpresa = 1,
+                IdTipoLicenca = 1,
+                Status = StatusLicenca.ATIVA,
+                Data_emissao = DateOnly.FromDateTime(DateTime.Now),
+                Data_validade = DateOnly.FromDateTime(DateTime.Now)
+            };
+
+            var licencaDto = new LicencaResponseDTO
+            {
+                Id = 1,
+                IdEpresa = 1,
+                IdTipoLicenca = 1,
+                Status = StatusLicenca.ATIVA,
+                Data_emissao = DateOnly.FromDateTime(DateTime.Now),
+                Data_validade = DateOnly.FromDateTime(DateTime.Now)
+            };
+
+            _mockService.Setup(s => s.GetLicencaByIdAsync(1)).ReturnsAsync(licence);
+            _mockMapper.Setup(m => m.Map<LicencaResponseDTO>(licence)).Returns(licencaDto);
 
             var result = await _controller.GetById(1);
 
             var okResult = Assert.IsType<OkObjectResult>(result.Result);
-            var returnValue = Assert.IsType<Licenca>(okResult.Value);
+            var returnValue = Assert.IsType<LicencaResponseDTO>(okResult.Value);
             Assert.Equal(1, returnValue.Id);
-            
         }
 
         [Fact]
-        public async Task CreateLicence_ReturnLicenceCreated_WithSuccessStatusCode() 
+        public async Task CreateLicence_ReturnsLicenceCreated_WithSuccessStatusCode()
         {
+            var licencaRequestDto = new LicencaRequestDTO
+            {
+                IdEpresa = 1,
+                IdTipoLicenca = 1,
+                Data_emissao = DateOnly.FromDateTime(DateTime.Now),
+                Data_validade = DateOnly.FromDateTime(DateTime.Now),
+                Status = StatusLicenca.ATIVA
+            };
 
-            var licence = new Licenca { Id = 1, IdEpresa = 1, IdTipoLicenca = 1, Status = StatusLicenca.ATIVA, Data_emissao = DateOnly.FromDateTime(DateTime.Now), Data_validade = DateOnly.FromDateTime(DateTime.Now) };
-            _mockService.Setup(p => p.CreateLicencaAsync(licence)).ReturnsAsync(licence);
-            var result = await _controller.Create(licence);
+            var licencaEntity = new Licenca
+            {
+                Id = 1,
+                IdEpresa = 1,
+                IdTipoLicenca = 1,
+                Data_emissao = licencaRequestDto.Data_emissao,
+                Data_validade = licencaRequestDto.Data_validade,
+                Status = licencaRequestDto.Status
+            };
+
+            var licencaResponseDto = new LicencaResponseDTO
+            {
+                Id = 1,
+                IdEpresa = 1,
+                IdTipoLicenca = 1,
+                Data_emissao = licencaRequestDto.Data_emissao,
+                Data_validade = licencaRequestDto.Data_validade,
+                Status = licencaRequestDto.Status
+            };
+
+            _mockMapper.Setup(m => m.Map<Licenca>(licencaRequestDto)).Returns(licencaEntity);
+            _mockService.Setup(s => s.CreateLicencaAsync(licencaEntity)).ReturnsAsync(licencaEntity);
+            _mockMapper.Setup(m => m.Map<LicencaResponseDTO>(licencaEntity)).Returns(licencaResponseDto);
+
+            var result = await _controller.Create(licencaRequestDto);
+
             var createdResult = Assert.IsType<CreatedAtActionResult>(result.Result);
-            var returnValue = Assert.IsType<Licenca>(createdResult.Value);
+            var returnValue = Assert.IsType<LicencaResponseDTO>(createdResult.Value);
             Assert.Equal(1, returnValue.Id);
-
         }
 
         [Fact]
-        public async Task UpdateLicence_ReturnUpdatedLicence_WithSuccessStatus() 
+        public async Task UpdateLicence_ReturnsUpdatedLicence_WithSuccessStatus()
         {
-            var licence = new Licenca { Id = 1, IdEpresa = 1, IdTipoLicenca = 1, Status = StatusLicenca.ATIVA, Data_emissao = DateOnly.FromDateTime(DateTime.Now), Data_validade = DateOnly.FromDateTime(DateTime.Now) };
-            _mockService.Setup(p => p.UpdateLicencaAsync(1, licence)).ReturnsAsync(licence);
-            var result = await _controller.Update(1, licence);
-            var createdResult = Assert.IsType<OkObjectResult>(result.Result);
-            var returnValue = Assert.IsType<Licenca>(createdResult.Value);
+            var licencaRequestDto = new LicencaRequestDTO
+            {
+                IdEpresa = 1,
+                IdTipoLicenca = 1,
+                Data_emissao = DateOnly.FromDateTime(DateTime.Now),
+                Data_validade = DateOnly.FromDateTime(DateTime.Now),
+                Status = StatusLicenca.ATIVA
+            };
+
+            var existingEntity = new Licenca
+            {
+                Id = 1,
+                IdEpresa = 1,
+                IdTipoLicenca = 1,
+                Data_emissao = licencaRequestDto.Data_emissao,
+                Data_validade = licencaRequestDto.Data_validade,
+                Status = licencaRequestDto.Status
+            };
+
+            var updatedEntity = new Licenca
+            {
+                Id = 1,
+                IdEpresa = 1,
+                IdTipoLicenca = 1,
+                Data_emissao = licencaRequestDto.Data_emissao,
+                Data_validade = licencaRequestDto.Data_validade,
+                Status = licencaRequestDto.Status
+            };
+
+            var updatedDto = new LicencaResponseDTO
+            {
+                Id = 1,
+                IdEpresa = 1,
+                IdTipoLicenca = 1,
+                Data_emissao = licencaRequestDto.Data_emissao,
+                Data_validade = licencaRequestDto.Data_validade,
+                Status = licencaRequestDto.Status
+            };
+
+            _mockService.Setup(s => s.GetLicencaByIdAsync(1)).ReturnsAsync(existingEntity);
+            _mockMapper.Setup(m => m.Map(licencaRequestDto, existingEntity)).Returns(updatedEntity);
+            _mockService.Setup(s => s.UpdateLicencaAsync(1, updatedEntity)).ReturnsAsync(updatedEntity);
+            _mockMapper.Setup(m => m.Map<LicencaResponseDTO>(updatedEntity)).Returns(updatedDto);
+
+            var result = await _controller.Update(1, licencaRequestDto);
+
+            var okResult = Assert.IsType<OkObjectResult>(result.Result);
+            var returnValue = Assert.IsType<LicencaResponseDTO>(okResult.Value);
             Assert.Equal(1, returnValue.Id);
-
-
         }
 
-
         [Fact]
-        public async Task DeleteLicence_ReturnDeleted_SuccessDelete() 
+        public async Task DeleteLicence_ReturnsNoContent_WhenDeleted()
         {
-            _mockService.Setup(p => p.DeleteLicencaAsync(1)).ReturnsAsync(true);
+            _mockService.Setup(s => s.DeleteLicencaAsync(1)).ReturnsAsync(true);
+
             var result = await _controller.Delete(1);
+
             Assert.IsType<NoContentResult>(result);
-
-
         }
+
         [Fact]
-        public async Task DeleteLicence_ReturnNotFound_WhenNotFound()
+        public async Task DeleteLicence_ReturnsNotFound_WhenNotDeleted()
         {
-            _mockService.Setup(p => p.DeleteLicencaAsync(1)).ReturnsAsync(false);
+            _mockService.Setup(s => s.DeleteLicencaAsync(1)).ReturnsAsync(false);
+
             var result = await _controller.Delete(1);
+
             Assert.IsType<NotFoundResult>(result);
-
-
         }
-
     }
 }

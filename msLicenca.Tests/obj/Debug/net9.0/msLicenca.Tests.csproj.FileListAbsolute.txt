@@ -143,3 +143,4 @@ C:\Users\Ulisses\source\repos\msLicenca\msLicenca.Tests\obj\Debug\net9.0\refint\
 C:\Users\Ulisses\source\repos\msLicenca\msLicenca.Tests\obj\Debug\net9.0\msLicenca.Tests.pdb
 C:\Users\Ulisses\source\repos\msLicenca\msLicenca.Tests\obj\Debug\net9.0\msLicenca.Tests.genruntimeconfig.cache
 C:\Users\Ulisses\source\repos\msLicenca\msLicenca.Tests\obj\Debug\net9.0\ref\msLicenca.Tests.dll
+C:\Users\Ulisses\source\repos\msLicenca\msLicenca.Tests\bin\Debug\net9.0\AutoMapper.dll
